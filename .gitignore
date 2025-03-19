@@ -1,34 +1,35 @@
-# Unity
+# Unity - Geral
 [Ll]ibrary/
-Logs/
 [Tt]emp/
 [Oo]bj/
 [Bb]uild/
 [Bb]uilds/
-UserSettings/
-MemoryCaptures/
+[Ll]ogs/
 
-# Visual Studio
+# Visual Studio / VSCode
 .vs/
-*.suo
+*.csproj
+*.sln
 *.user
-*.userosscache
+*.userprefs
+*.pidb
+*.suo
+*.unityproj
+*.booproj
+*.tmproj
 *.sln.docstates
-*.vcxproj*
-*.csproj.user
-
-# Compilados
-*.exe
-*.dll
-*.pdb
-*.so
-*.apk
-*.aab
-*.ipa
 
 # Sistema Operacional
 .DS_Store
 Thumbs.db
 
-# Git
-*.orig
+# Unity Cache
+[Bb]uilds/
+Assets/AssetStoreTools*
+
+# Configs locais
+*.apk
+*.unitypackage
+*.swp
+*.lock
+*.log
