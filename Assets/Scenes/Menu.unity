@@ -230,7 +230,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7a854bc5e350ac4785c3e80a333666e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeDoLevelDeJogo: Game
+  nomeDoLevelDeJogo: MainScene
   painelMenuInicial: {fileID: 1295104365}
   painelOpcoes: {fileID: 1656765991}
 --- !u!4 &115961520
