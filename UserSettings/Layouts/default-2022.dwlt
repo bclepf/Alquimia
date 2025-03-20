@@ -146,7 +146,11 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
+<<<<<<< HEAD
   controlID: 16
+=======
+  controlID: 26
+>>>>>>> 02722b7eb8ecced0aeee5ef76e0650e0574aefdc
   draggingID: 0
 --- !u!114 &7
 MonoBehaviour:
@@ -949,9 +953,15 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
       m_SelectedIDs: 
       m_LastClickedID: 0
       m_ExpandedIDs: 16fbffff
+=======
+      m_SelectedIDs: d22a0000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 18fbffff
+>>>>>>> 02722b7eb8ecced0aeee5ef76e0650e0574aefdc
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1020,7 +1030,11 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
     - Assets/Scenes
+=======
+    - Assets/Scripts
+>>>>>>> 02722b7eb8ecced0aeee5ef76e0650e0574aefdc
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1029,7 +1043,11 @@ MonoBehaviour:
   m_StartGridSize: 64
   m_LastFolders: []
   m_LastFoldersGridSize: -1
+<<<<<<< HEAD
   m_LastProjectPath: C:\Users\Bernardo Clepf\Alquimia 2
+=======
+  m_LastProjectPath: C:\Users\Bernardo Clepf\Alquimia
+>>>>>>> 02722b7eb8ecced0aeee5ef76e0650e0574aefdc
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
