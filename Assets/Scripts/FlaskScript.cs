@@ -4,45 +4,51 @@ using UnityEngine;
 
 public class FlaskScript : MonoBehaviour
 {
-    private static GameObject selectedObject = null;
-    private static Vector3 offset;
-    private static Rigidbody2D selectedRb;
+    private bool _isDragging = false;
+    private Vector3 _offset;
+    private Rigidbody2D _rb;
+    private float _minX, _maxX, _minY, _maxY;
+
+    void Start()
+    {
+        _rb = GetComponent<Rigidbody2D>();
+
+        // Pegamos os limites da tela com base na câmera principal
+        Vector3 bottomLeft = Camera.main.ViewportToWorldPoint(new Vector3(0, 0, 0));
+        Vector3 topRight = Camera.main.ViewportToWorldPoint(new Vector3(1, 1, 0));
+
+        // Definimos os limites de movimento
+        _minX = bottomLeft.x;
+        _maxX = topRight.x;
+        _minY = bottomLeft.y;
+        _maxY = topRight.y;
+    }
+
+    void OnMouseDown()
+    {
+        _isDragging = true;
+        _rb.gravityScale = 0; // Desativa a gravidade enquanto arrasta
+        _offset = transform.position - Camera.main.ScreenToWorldPoint(Input.mousePosition);
+    }
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0)) // Quando o botão do mouse for pressionado
+        if (_isDragging)
         {
-            RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
-
-            if (hit.collider != null) // Verifica se clicamos em algum objeto
-            {
-                selectedObject = hit.collider.gameObject; // Define o objeto selecionado
-                selectedRb = selectedObject.GetComponent<Rigidbody2D>();
-
-                if (selectedRb != null)
-                {
-                    selectedRb.gravityScale = 0; // Desativa a gravidade ao pegar o objeto
-                    offset = selectedObject.transform.position - Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                }
-            }
-        }
-
-        if (selectedObject != null && Input.GetMouseButton(0)) // Arrasta apenas o objeto selecionado
-        {
-            Vector3 newPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition) + offset;
+            Vector3 newPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition) + _offset;
             newPosition.z = 0; // Mantém no mesmo plano
-            selectedObject.transform.position = newPosition;
+
+            // Mantém o objeto dentro dos limites da câmera
+            newPosition.x = Mathf.Clamp(newPosition.x, _minX, _maxX);
+            newPosition.y = Mathf.Clamp(newPosition.y, _minY, _maxY);
+
+            transform.position = newPosition;
         }
 
-        if (Input.GetMouseButtonUp(0) && selectedObject != null) // Solta o objeto
+        if (Input.GetMouseButtonUp(0))
         {
-            if (selectedRb != null)
-            {
-                selectedRb.gravityScale = 1; // Ativa a gravidade ao soltar
-            }
-
-            selectedObject = null; // Reseta a seleção
-            selectedRb = null;
+            _isDragging = false;
+            _rb.gravityScale = 1; // Ativa a gravidade ao soltar
         }
     }
 }

@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 41533762}
   - component: {fileID: 41533761}
   - component: {fileID: 41533763}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Red_Flask
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -306,7 +306,7 @@ GameObject:
   - component: {fileID: 225999823}
   - component: {fileID: 225999822}
   - component: {fileID: 225999824}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Orange_Flask
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -793,7 +793,7 @@ GameObject:
   - component: {fileID: 400640902}
   - component: {fileID: 400640903}
   - component: {fileID: 400640901}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Yellow_Flask
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -964,7 +964,7 @@ GameObject:
   - component: {fileID: 491409046}
   - component: {fileID: 491409045}
   - component: {fileID: 491409047}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cyan_Flask
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1354,7 +1354,7 @@ GameObject:
   - component: {fileID: 649188832}
   - component: {fileID: 649188831}
   - component: {fileID: 649188833}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: UltraGreen_Flask
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1609,7 +1609,7 @@ GameObject:
   - component: {fileID: 839132499}
   - component: {fileID: 839132498}
   - component: {fileID: 839132500}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DarkBlue_Flask
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1778,13 +1778,12 @@ GameObject:
   - component: {fileID: 867718276}
   - component: {fileID: 867718277}
   - component: {fileID: 867718278}
-  - component: {fileID: 867718279}
   m_Layer: 0
   m_Name: Table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &867718276
 Transform:
@@ -1841,7 +1840,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 9
   m_Sprite: {fileID: 1568069174, guid: 74010b12d80ca4f4ea17e8c887cfb34c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1885,7 +1884,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.33846235, y: -0.011971384}
+  m_Offset: {x: 0.33846235, y: -0.022330366}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1896,35 +1895,8 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.3662233, y: 0.39605725}
+  m_Size: {x: 3.3662233, y: 0.37533927}
   m_EdgeRadius: 0
---- !u!50 &867718279
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 867718275}
-  m_BodyType: 2
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1 &905797614
 GameObject:
   m_ObjectHideFlags: 0
@@ -1938,7 +1910,7 @@ GameObject:
   - component: {fileID: 905797619}
   - component: {fileID: 905797618}
   - component: {fileID: 905797620}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Purple_Flask
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2425,7 +2397,7 @@ GameObject:
   - component: {fileID: 1292382416}
   - component: {fileID: 1292382415}
   - component: {fileID: 1292382417}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Green_Flask
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2593,6 +2565,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1317383966}
   - component: {fileID: 1317383965}
+  - component: {fileID: 1317383967}
   m_Layer: 0
   m_Name: Pedrinho
   m_TagString: Untagged
@@ -2667,6 +2640,51 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1317383967
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1317383964}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.03541863, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4.42, y: 6.4}
+    newSize: {x: 4.42, y: 6.4}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.866102, y: 6.4}
+  m_EdgeRadius: 0
 --- !u!1 &1562700979
 GameObject:
   m_ObjectHideFlags: 0
@@ -2680,7 +2698,7 @@ GameObject:
   - component: {fileID: 1562700984}
   - component: {fileID: 1562700983}
   - component: {fileID: 1562700985}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Blue_Flask
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2848,14 +2866,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1691243370}
   - component: {fileID: 1691243372}
-  - component: {fileID: 1691243374}
   - component: {fileID: 1691243375}
+  - component: {fileID: 1691243376}
   m_Layer: 0
   m_Name: Cauldron
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1691243370
 Transform:
@@ -2912,7 +2930,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 12
   m_Sprite: {fileID: 21300000, guid: ec937f9193adedc48994a0e89bf5d2c6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2924,33 +2942,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &1691243374
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1691243369}
-  m_BodyType: 2
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1000000
-  m_LinearDrag: 0
-  m_AngularDrag: 0
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &1691243375
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2996,6 +2987,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.3530446, y: 1.0395617}
   m_EdgeRadius: 0
+--- !u!114 &1691243376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691243369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3c4aa7c96bcccc44bf0df4e7eb73f3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1704505814
 GameObject:
   m_ObjectHideFlags: 0
@@ -3115,7 +3118,7 @@ GameObject:
   - component: {fileID: 1759075569}
   - component: {fileID: 1759075568}
   - component: {fileID: 1759075570}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RottenYellow_Flask
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3286,7 +3289,7 @@ GameObject:
   - component: {fileID: 1875981095}
   - component: {fileID: 1875981094}
   - component: {fileID: 1875981096}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DarkRed_Flask
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3647,7 +3650,7 @@ GameObject:
   - component: {fileID: 2078554865}
   - component: {fileID: 2078554864}
   - component: {fileID: 2078554866}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pink_Flask
   m_TagString: Untagged
   m_Icon: {fileID: 0}
