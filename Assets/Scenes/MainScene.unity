@@ -133,8 +133,8 @@ GameObject:
   - component: {fileID: 41533758}
   - component: {fileID: 41533760}
   - component: {fileID: 41533762}
-  - component: {fileID: 41533761}
   - component: {fileID: 41533763}
+  - component: {fileID: 41533764}
   m_Layer: 6
   m_Name: Red_Flask
   m_TagString: Untagged
@@ -209,18 +209,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &41533761
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 41533757}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44a3561734554bb45b0f205252f767a8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &41533762
 Rigidbody2D:
   serializedVersion: 4
@@ -236,7 +224,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -293,6 +281,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.1526985, y: 1.6}
   m_EdgeRadius: 0
+--- !u!114 &41533764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 41533757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44a3561734554bb45b0f205252f767a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nomePocao: "Po\xE7\xE3o de Fogo"
+  raridade: 
 --- !u!1 &225999818
 GameObject:
   m_ObjectHideFlags: 0
@@ -392,6 +394,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44a3561734554bb45b0f205252f767a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nomePocao: 
+  raridade: 
 --- !u!50 &225999823
 Rigidbody2D:
   serializedVersion: 4
@@ -407,7 +411,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -792,7 +796,7 @@ GameObject:
   - component: {fileID: 400640900}
   - component: {fileID: 400640902}
   - component: {fileID: 400640903}
-  - component: {fileID: 400640901}
+  - component: {fileID: 400640904}
   m_Layer: 6
   m_Name: Yellow_Flask
   m_TagString: Untagged
@@ -867,18 +871,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &400640901
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 400640897}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44a3561734554bb45b0f205252f767a8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &400640902
 Rigidbody2D:
   serializedVersion: 4
@@ -894,7 +886,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -951,6 +943,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.1069098, y: 1.3635867}
   m_EdgeRadius: 0
+--- !u!114 &400640904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 400640897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44a3561734554bb45b0f205252f767a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nomePocao: pocao de energia
+  raridade: 
 --- !u!1 &491409041
 GameObject:
   m_ObjectHideFlags: 0
@@ -1050,6 +1056,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44a3561734554bb45b0f205252f767a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nomePocao: 
+  raridade: 
 --- !u!50 &491409046
 Rigidbody2D:
   serializedVersion: 4
@@ -1065,7 +1073,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -1440,6 +1448,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44a3561734554bb45b0f205252f767a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nomePocao: 
+  raridade: 
 --- !u!50 &649188832
 Rigidbody2D:
   serializedVersion: 4
@@ -1455,7 +1465,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -1695,6 +1705,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44a3561734554bb45b0f205252f767a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nomePocao: 
+  raridade: 
 --- !u!50 &839132499
 Rigidbody2D:
   serializedVersion: 4
@@ -1710,7 +1722,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -1996,6 +2008,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44a3561734554bb45b0f205252f767a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nomePocao: 
+  raridade: 
 --- !u!50 &905797619
 Rigidbody2D:
   serializedVersion: 4
@@ -2011,7 +2025,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -2077,6 +2091,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 931121858}
+  - component: {fileID: 931121859}
+  - component: {fileID: 931121860}
+  - component: {fileID: 931121861}
   m_Layer: 0
   m_Name: Flasks
   m_TagString: Untagged
@@ -2111,6 +2128,92 @@ Transform:
   - {fileID: 225999819}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &931121859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931121857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44a3561734554bb45b0f205252f767a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nomePocao: 
+  raridade: 
+--- !u!50 &931121860
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931121857}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!61 &931121861
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931121857}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1121330867
 GameObject:
   m_ObjectHideFlags: 0
@@ -2395,8 +2498,8 @@ GameObject:
   - component: {fileID: 1292382412}
   - component: {fileID: 1292382414}
   - component: {fileID: 1292382416}
-  - component: {fileID: 1292382415}
   - component: {fileID: 1292382417}
+  - component: {fileID: 1292382418}
   m_Layer: 6
   m_Name: Green_Flask
   m_TagString: Untagged
@@ -2471,18 +2574,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1292382415
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1292382411}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44a3561734554bb45b0f205252f767a8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &1292382416
 Rigidbody2D:
   serializedVersion: 4
@@ -2498,7 +2589,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -2555,6 +2646,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.0428467, y: 1.6}
   m_EdgeRadius: 0
+--- !u!114 &1292382418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292382411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44a3561734554bb45b0f205252f767a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nomePocao: pocao de mana
+  raridade: 
 --- !u!1 &1317383964
 GameObject:
   m_ObjectHideFlags: 0
@@ -2696,8 +2801,8 @@ GameObject:
   - component: {fileID: 1562700980}
   - component: {fileID: 1562700982}
   - component: {fileID: 1562700984}
-  - component: {fileID: 1562700983}
   - component: {fileID: 1562700985}
+  - component: {fileID: 1562700986}
   m_Layer: 6
   m_Name: Blue_Flask
   m_TagString: Untagged
@@ -2772,18 +2877,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1562700983
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1562700979}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44a3561734554bb45b0f205252f767a8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &1562700984
 Rigidbody2D:
   serializedVersion: 4
@@ -2799,7 +2892,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -2856,6 +2949,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.32271, y: 1.6}
   m_EdgeRadius: 0
+--- !u!114 &1562700986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562700979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44a3561734554bb45b0f205252f767a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nomePocao: pocao de cura
+  raridade: 
 --- !u!1 &1691243369
 GameObject:
   m_ObjectHideFlags: 0
@@ -2971,7 +3078,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.002245009, y: -0.2802192}
@@ -2999,6 +3106,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3c4aa7c96bcccc44bf0df4e7eb73f3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  efeitoMistura: {fileID: 0}
+  somMistura: {fileID: 0}
 --- !u!1 &1704505814
 GameObject:
   m_ObjectHideFlags: 0
@@ -3204,6 +3313,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44a3561734554bb45b0f205252f767a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nomePocao: 
+  raridade: 
 --- !u!50 &1759075569
 Rigidbody2D:
   serializedVersion: 4
@@ -3219,7 +3330,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -3375,6 +3486,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44a3561734554bb45b0f205252f767a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nomePocao: 
+  raridade: 
 --- !u!50 &1875981095
 Rigidbody2D:
   serializedVersion: 4
@@ -3390,7 +3503,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -3736,6 +3849,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44a3561734554bb45b0f205252f767a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nomePocao: 
+  raridade: 
 --- !u!50 &2078554865
 Rigidbody2D:
   serializedVersion: 4
@@ -3751,7 +3866,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
