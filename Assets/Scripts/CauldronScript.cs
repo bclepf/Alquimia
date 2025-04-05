@@ -1,7 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.SceneManagement;  
+using UnityEngine.UI;
 
 public class CauldronScript : MonoBehaviour
 {
@@ -11,24 +12,47 @@ public class CauldronScript : MonoBehaviour
 
     [SerializeField] private ParticleSystem efeitoMistura;
     [SerializeField] private AudioSource somMistura;
+    [SerializeField] private GameObject _restartLayer;
+    [SerializeField] private GameObject _flasks;
 
+    #region Misturas
+    [SerializeField] private Transform pontoDeSpawn;
+    [SerializeField] private GameObject prefabCesio;
+    [SerializeField] private GameObject prefabGolem;
+    [SerializeField] private GameObject prefabPocaoEstragada;
+
+    private Dictionary<string, GameObject> mapaDePrefabs = new Dictionary<string, GameObject>();
     private Dictionary<string, (string, string)> receitas = new Dictionary<string, (string, string)>
     {
-        { "pocao de cura+Poção de Fogo+pocao de mana", ("Poção de Cura Flamejante", "Comum") },
-        { "Poção de Regeneração+Poção de Velocidade", ("Poção de Aceleração Regenerativa", "Rara") },
-        { "Poção de Força+Poção de Imunidade", ("Poção de Invencibilidade", "Lendária") },
-        { "Poção de Velocidade+Poção de Energia", ("Poção de Super Velocidade", "Rara") },
-        { "Poção de Força+Poção de Cura+Poção de Imunidade", ("Poção Suprema de Resistência", "Lendária") }
+        { "Ácido+Energia+Tritio", ("Césio", "Lendária") },
+        { "Energia+Solução de Ferro+Vida Líquida", ("Golem", "Rara") },
+        
     };
+    #endregion
+
+
+
+    private void Start()
+    {
+        mapaDePrefabs["Césio"] = prefabCesio;
+        mapaDePrefabs["Golem"] = prefabGolem;
+        mapaDePrefabs["Poção Estragada"] = prefabPocaoEstragada;
+    }
+
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.R))  
         {
-            ReiniciarCena();
+            GameManager.instance.ReiniciarCena();
+        }
+
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            StartCoroutine(ProcessarMistura());
         }
     }
-
+    #region Misturas
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (estaMisturando) return;  
@@ -75,31 +99,54 @@ public class CauldronScript : MonoBehaviour
         yield return new WaitForSeconds(2f);  
 
         Misturar();  
-        estaMisturando = false;  
+        estaMisturando = false;
+
     }
 
     private void Misturar()
     {
-        ingredientesNoCaldeirao.Sort();  
+        ingredientesNoCaldeirao.Sort();
         string combinacao = string.Join("+", ingredientesNoCaldeirao);
+
+        string nomeResultado;
 
         if (receitas.ContainsKey(combinacao))
         {
-            string nomeResultado = receitas[combinacao].Item1;
+            nomeResultado = receitas[combinacao].Item1;
             string raridadeResultado = receitas[combinacao].Item2;
 
             Debug.Log($"Mistura feita! Você criou uma {nomeResultado} ({raridadeResultado})");
         }
         else
         {
+            nomeResultado = "Poção Estragada";
             Debug.Log("A mistura falhou! Você criou uma Poção Estragada!");
         }
 
-        ingredientesNoCaldeirao.Clear();  
+        
+
+        // Spawna o resultado
+        if (mapaDePrefabs.TryGetValue(nomeResultado, out GameObject prefab))
+        {
+            Instantiate(prefab, pontoDeSpawn.position, Quaternion.identity);
+        }
+        else
+        {
+            Debug.LogWarning("Prefab não encontrado para: " + nomeResultado);
+        }
+
+        StartCoroutine(ResetGame());
+        
     }
 
-    private void ReiniciarCena()
+    private IEnumerator ResetGame() 
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        yield return new WaitForSeconds(3f);
+
+
+        ingredientesNoCaldeirao.Clear();
+        _restartLayer.SetActive(true);
+        _flasks.SetActive(false);
     }
+    #endregion
 }
