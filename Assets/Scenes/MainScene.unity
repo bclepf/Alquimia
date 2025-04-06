@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 41533763}
   - component: {fileID: 41533764}
   m_Layer: 6
-  m_Name: Red_Flask
+  m_Name: "Solu\xE7\xE3o de Ferro"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -309,7 +309,7 @@ GameObject:
   - component: {fileID: 225999822}
   - component: {fileID: 225999824}
   m_Layer: 6
-  m_Name: Orange_Flask
+  m_Name: Lava Fria
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -798,7 +798,7 @@ GameObject:
   - component: {fileID: 295537547}
   - component: {fileID: 295537551}
   m_Layer: 0
-  m_Name: Yellow Gem
+  m_Name: Sulfur
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -936,13 +936,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 295537546}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0.14565125, w: 0.989336}
-  m_LocalPosition: {x: -8.944155, y: -4.7749104, z: -0.016821023}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.944155, y: -4.348, z: -0.016821023}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 931121858}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -16.75}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &295537551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1089,7 +1089,7 @@ GameObject:
   - component: {fileID: 376133697}
   - component: {fileID: 376133699}
   - component: {fileID: 376133698}
-  m_Layer: 5
+  m_Layer: 1
   m_Name: Gradient_Filter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1167,7 +1167,7 @@ GameObject:
   - component: {fileID: 400640903}
   - component: {fileID: 400640904}
   m_Layer: 6
-  m_Name: Yellow_Flask
+  m_Name: Energia
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1340,7 +1340,7 @@ GameObject:
   - component: {fileID: 413835784}
   - component: {fileID: 413835783}
   m_Layer: 0
-  m_Name: Tube
+  m_Name: Tubo de Raios
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1514,7 +1514,7 @@ GameObject:
   - component: {fileID: 491409045}
   - component: {fileID: 491409047}
   m_Layer: 6
-  m_Name: Cyan_Flask
+  m_Name: "\xC1gua Suja"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1974,7 +1974,7 @@ GameObject:
   - component: {fileID: 649188831}
   - component: {fileID: 649188833}
   m_Layer: 6
-  m_Name: UltraGreen_Flask
+  m_Name: "\xC1cido"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2347,7 +2347,7 @@ GameObject:
   - component: {fileID: 781964648}
   - component: {fileID: 781964652}
   m_Layer: 0
-  m_Name: Bone
+  m_Name: "Osso de drag\xE3o"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2486,7 +2486,7 @@ Transform:
   m_GameObject: {fileID: 781964647}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -1.7741547, y: -5.09491, z: -0.016821023}
+  m_LocalPosition: {x: -1.7741547, y: -4.926, z: -0.016821023}
   m_LocalScale: {x: 8, y: 8, z: 8}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -2652,7 +2652,7 @@ GameObject:
   - component: {fileID: 839132498}
   - component: {fileID: 839132500}
   m_Layer: 6
-  m_Name: DarkBlue_Flask
+  m_Name: Tritio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2955,7 +2955,7 @@ GameObject:
   - component: {fileID: 905797618}
   - component: {fileID: 905797620}
   m_Layer: 6
-  m_Name: Purple_Flask
+  m_Name: Elixir
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3114,6 +3114,37 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.3365688, y: 1.5459628}
   m_EdgeRadius: 0
+--- !u!1 &911132188
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 911132189}
+  m_Layer: 0
+  m_Name: Bolhas Position
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &911132189
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 911132188}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.52, y: -3.77, z: -0.099293776}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &931121857
 GameObject:
   m_ObjectHideFlags: 0
@@ -3345,7 +3376,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.74, y: -1.57, z: -0.0607825}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -3479,7 +3510,7 @@ GameObject:
   - component: {fileID: 1292382417}
   - component: {fileID: 1292382418}
   m_Layer: 6
-  m_Name: Green_Flask
+  m_Name: "Vida L\xEDquida"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3782,7 +3813,7 @@ GameObject:
   - component: {fileID: 1355669415}
   - component: {fileID: 1355669419}
   m_Layer: 0
-  m_Name: Red_Gem
+  m_Name: Pedra Misteriosa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3921,7 +3952,7 @@ Transform:
   m_GameObject: {fileID: 1355669414}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.704154, y: -4.5449104, z: -0.016821023}
+  m_LocalPosition: {x: -11.704154, y: -4.341, z: -0.016821023}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -3956,7 +3987,7 @@ GameObject:
   - component: {fileID: 1562700986}
   - component: {fileID: 1562700987}
   m_Layer: 6
-  m_Name: Blue_Flask
+  m_Name: "\xC1gua"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4354,15 +4385,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3c4aa7c96bcccc44bf0df4e7eb73f3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  efeitoMistura: {fileID: 0}
-  somMistura: {fileID: 0}
   _restartLayer: {fileID: 324854261}
   _flasks: {fileID: 931121857}
   _filtroGradiente: {fileID: 376133698}
+  _bolhasPosition: {fileID: 911132189}
   _pontoDeSpawn: {fileID: 1124418575}
+  _blopMix: {fileID: 8300000, guid: e7d6ed1968ecc044f9e33e5891ff9f1d, type: 3}
+  _mixingSound: {fileID: 8300000, guid: 986647b2f2b5568418b9f68050efd7fd, type: 3}
+  efeitoMistura: {fileID: 243303952896250054, guid: bc4864e6f441fd34695307ac1176b4c9, type: 3}
   _prefabCesio: {fileID: 8594940225591731202, guid: 4e9899096a512614eacbcd77c26b0529, type: 3}
   _prefabGolem: {fileID: 8219201264882139365, guid: 2912e3f4bc44e754f8d1ce7bb8b1bd7d, type: 3}
   _prefabFalho: {fileID: 3673315459437463723, guid: ba6479d6d10a1154f8a7ca07016e62ab, type: 3}
+  _prefabZumbi: {fileID: 2372867474658486629, guid: cf05d3dabbbcd9d4fabab54f77053392, type: 3}
+  _prefabDragao: {fileID: 1787906642267149596, guid: 47ac0625953310d47b15a8efd6c1c145, type: 3}
+  _prefabObsidian: {fileID: 3426436890848330337, guid: 964098f3a89e79148a84a1eebc14e53a, type: 3}
   _cesioPosition: {fileID: 3651585500107225506, guid: 4e9899096a512614eacbcd77c26b0529, type: 3}
   _cesioSound: {fileID: 8300000, guid: 53f131f84aa4a5341aa1f8197df16860, type: 3}
   _corInicialCesio: {r: 0.5568628, g: 0.7607844, b: 0.7843138, a: 0}
@@ -4487,7 +4523,7 @@ GameObject:
   - component: {fileID: 1759075568}
   - component: {fileID: 1759075570}
   m_Layer: 6
-  m_Name: RottenYellow_Flask
+  m_Name: Comida Estragada
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4660,7 +4696,7 @@ GameObject:
   - component: {fileID: 1875981094}
   - component: {fileID: 1875981096}
   m_Layer: 6
-  m_Name: DarkRed_Flask
+  m_Name: Sangue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5173,7 +5209,7 @@ GameObject:
   - component: {fileID: 2078554864}
   - component: {fileID: 2078554866}
   m_Layer: 6
-  m_Name: Pink_Flask
+  m_Name: Elixi Puro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5504,3 +5540,4 @@ SceneRoots:
   - {fileID: 646559778}
   - {fileID: 2019895938}
   - {fileID: 1124418575}
+  - {fileID: 911132189}
