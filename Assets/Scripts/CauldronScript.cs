@@ -14,29 +14,41 @@ public class CauldronScript : MonoBehaviour
     private string _raridadeResultado;
     private string _nomeResultado;
 
-    [SerializeField] private ParticleSystem efeitoMistura;
-    [SerializeField] private AudioSource somMistura;
+    [Header("General Items")]
     [SerializeField] private GameObject _restartLayer;
     [SerializeField] private GameObject _flasks;
     [SerializeField] private Image _filtroGradiente;
-
-    #region Misturas
+    [SerializeField] private Transform _bolhasPosition;
     [SerializeField] private Transform _pontoDeSpawn;
+    [Header("Audio Sources")]
+    [SerializeField] private AudioClip _blopMix;
+    [SerializeField] private AudioClip _mixingSound;
+    [Header("Particles")]
+    [SerializeField] private ParticleSystem efeitoMistura;
+    #region Misturas
+    [Header("Misturas")]
+    [Header("Prefabs")]
     [SerializeField] private GameObject _prefabCesio;
     [SerializeField] private GameObject _prefabGolem;
     [SerializeField] private GameObject _prefabFalho;
+    [SerializeField] private GameObject _prefabZumbi;
+    [SerializeField] private GameObject _prefabDragao;
+    [SerializeField] private GameObject _prefabObsidian;
 
     private Dictionary<string, GameObject> mapaDePrefabs = new Dictionary<string, GameObject>();
     private Dictionary<string, (string, string)> receitas = new Dictionary<string, (string, string)>
     {
         { "Ácido+Energia+Tritio", ("Césio", "Lendária") },
-        { "Energia+Solução de Ferro+Vida Líquida", ("Golem", "Rara") },
+        { "Energia+Solução de Ferro+Vida Líquida", ("Golem", "Épica") },
+        { "Elixir Puro+Sangue+Vida Líquida",("Zumbi Pequeno", "Épica") },
+        { "Lava Fria+Osso de Dragão+Pedra Misteriosa", ("Dragão Filhote","Épica") },
+        { "Água+Lava Fria", ("Obsidiana","Rara") },
 
     };
     #endregion
 
     #region Cesio
-
+    [Header("Césio")]
     [SerializeField] private Transform _cesioPosition;
     [SerializeField] private AudioClip _cesioSound;
     [SerializeField] private Color _corInicialCesio;
@@ -46,9 +58,13 @@ public class CauldronScript : MonoBehaviour
 
     private void Start()
     {
+        mapaDePrefabs["Mistura Falha"] = _prefabFalho;
         mapaDePrefabs["Césio"] = _prefabCesio;
         mapaDePrefabs["Golem"] = _prefabGolem;
-        mapaDePrefabs["Mistura Falha"] = _prefabFalho;
+        mapaDePrefabs["Zumbi Pequeno"] = _prefabZumbi;
+        mapaDePrefabs["Dragão Filhote"] = _prefabDragao;
+        mapaDePrefabs["Obsidiana"] = _prefabObsidian;
+        
     }
 
 
@@ -80,6 +96,7 @@ public class CauldronScript : MonoBehaviour
                 {
                     ingredientesNoCaldeirao.Add(nomePocao);
                     Debug.Log($"Poção adicionada: {nomePocao}");
+                    AudioSource.PlayClipAtPoint(_blopMix, transform.position);
                     Destroy(other.gameObject);
 
                     if (ingredientesNoCaldeirao.Count == limiteIngredientes)
@@ -103,12 +120,12 @@ public class CauldronScript : MonoBehaviour
     {
         estaMisturando = true;
 
-        if (efeitoMistura != null) efeitoMistura.Play();
-        if (somMistura != null) somMistura.Play();
+        if (efeitoMistura != null) Instantiate(efeitoMistura, _bolhasPosition.position, Quaternion.identity);
+        if (_mixingSound != null) AudioSource.PlayClipAtPoint(_mixingSound, transform.position);
 
         Debug.Log("Misturando...");
 
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(4f);
 
         Misturar();
         estaMisturando = false;
