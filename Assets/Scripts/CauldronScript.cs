@@ -34,6 +34,8 @@ public class CauldronScript : MonoBehaviour
     [SerializeField] private GameObject _prefabZumbi;
     [SerializeField] private GameObject _prefabDragao;
     [SerializeField] private GameObject _prefabObsidian;
+    [Header("Lettering Elements")]
+    [SerializeField] private Text _letreiroText;
 
     private Dictionary<string, GameObject> mapaDePrefabs = new Dictionary<string, GameObject>();
     private Dictionary<string, (string, string)> receitas = new Dictionary<string, (string, string)>
@@ -64,7 +66,7 @@ public class CauldronScript : MonoBehaviour
         mapaDePrefabs["Zumbi Pequeno"] = _prefabZumbi;
         mapaDePrefabs["Dragão Filhote"] = _prefabDragao;
         mapaDePrefabs["Obsidiana"] = _prefabObsidian;
-        
+
     }
 
 
@@ -96,6 +98,7 @@ public class CauldronScript : MonoBehaviour
                 {
                     ingredientesNoCaldeirao.Add(nomePocao);
                     Debug.Log($"Poção adicionada: {nomePocao}");
+                    AtualizarLetreiroUltimoIngrediente(nomePocao);
                     AudioSource.PlayClipAtPoint(_blopMix, transform.position);
                     Destroy(other.gameObject);
 
@@ -207,6 +210,15 @@ public class CauldronScript : MonoBehaviour
 
     #endregion
 
+    #region Letreiro
+    private void AtualizarLetreiroUltimoIngrediente(string nomeIngrediente)
+    {
+        if (_letreiroText == null) return;
+
+        _letreiroText.text = $"{nomeIngrediente}";
+    }
+
+    #endregion
     private IEnumerator ResetGame()
     {
         yield return new WaitForSeconds(3f);
