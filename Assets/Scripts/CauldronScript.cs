@@ -14,6 +14,8 @@ public class CauldronScript : MonoBehaviour
     private string _raridadeResultado;
     private string _nomeResultado;
 
+    private ProgressoDoJogador progressoAtual;
+
     [Header("General Items")]
     [SerializeField] private GameObject _restartLayer;
     [SerializeField] private GameObject _flasks;
@@ -26,27 +28,29 @@ public class CauldronScript : MonoBehaviour
     [Header("Particles")]
     [SerializeField] private ParticleSystem efeitoMistura;
     #region Misturas
-    [Header("Misturas")]
+    [Header("Mixes")]
     [Header("Prefabs")]
     [SerializeField] private GameObject _prefabCesio;
     [SerializeField] private GameObject _prefabGolem;
     [SerializeField] private GameObject _prefabFalho;
     [SerializeField] private GameObject _prefabZumbi;
     [SerializeField] private GameObject _prefabDragao;
-    [SerializeField] private GameObject _prefabObsidian;
+    [SerializeField] private GameObject _prefabPedra;
     [Header("Lettering Elements")]
     [SerializeField] private Text _letreiroText;
+    [Header("Codex")]
+    [SerializeField] private CodexScript codexScript;
 
     private Dictionary<string, GameObject> mapaDePrefabs = new Dictionary<string, GameObject>();
     private Dictionary<string, (string, string)> receitas = new Dictionary<string, (string, string)>
-    {
-        { "Ácido+Energia+Tritio", ("Césio", "Lendária") },
-        { "Energia+Solução de Ferro+Vida Líquida", ("Golem", "Épica") },
-        { "Elixir Puro+Sangue+Vida Líquida",("Zumbi Pequeno", "Épica") },
-        { "Lava Fria+Osso de Dragão+Pedra Misteriosa", ("Dragão Filhote","Épica") },
-        { "Água+Lava Fria", ("Obsidiana","Rara") },
+        {
+            { "Ácido+Energia+Tritio", ("Césio", "Lendária") },
+            { "Energia+Solução de Ferro+Vida Líquida", ("Golem", "Épica") },
+            { "Elixir Puro+Sangue+Vida Líquida",("Zumbi Pequeno", "Épica") },
+            { "Lava Fria+Osso de Dragão+Pedra Misteriosa", ("Dragão Filhote","Épica") },
+            { "Água+Lava Fria", ("Pedra","Rara") },
 
-    };
+        };
     #endregion
 
     #region Cesio
@@ -60,15 +64,23 @@ public class CauldronScript : MonoBehaviour
 
     private void Start()
     {
+        if (_restartLayer != null)
+            _restartLayer.SetActive(false);  // Sempre desativa o restartLayer ao iniciar a cena
+
+        if (_flasks != null)
+            _flasks.SetActive(true);         // Sempre ativa os frascos ao iniciar
+
+        progressoAtual = SaveManager.CarregarProgresso();
+        codexScript.AtualizarCodex(new HashSet<string>(progressoAtual.misturasDescobertas));
+
         mapaDePrefabs["Mistura Falha"] = _prefabFalho;
         mapaDePrefabs["Césio"] = _prefabCesio;
         mapaDePrefabs["Golem"] = _prefabGolem;
         mapaDePrefabs["Zumbi Pequeno"] = _prefabZumbi;
         mapaDePrefabs["Dragão Filhote"] = _prefabDragao;
-        mapaDePrefabs["Obsidiana"] = _prefabObsidian;
+        mapaDePrefabs["Pedra"] = _prefabPedra;
 
     }
-
 
     private void Update()
     {
@@ -82,6 +94,19 @@ public class CauldronScript : MonoBehaviour
             StartCoroutine(ProcessarMistura());
         }
     }
+
+    #region Save
+    private void RegistrarMistura(string nomeMistura)
+    {
+        if (!progressoAtual.misturasDescobertas.Contains(nomeMistura))
+        {
+            progressoAtual.misturasDescobertas.Add(nomeMistura);
+            SaveManager.SalvarProgresso(progressoAtual);
+        }
+
+        codexScript.AtualizarCodex(new HashSet<string>(progressoAtual.misturasDescobertas));
+    }
+    #endregion
     #region Misturas
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -132,7 +157,6 @@ public class CauldronScript : MonoBehaviour
 
         Misturar();
         estaMisturando = false;
-
     }
 
     private void Misturar()
@@ -144,6 +168,9 @@ public class CauldronScript : MonoBehaviour
         {
             _nomeResultado = receitas[combinacao].Item1;
             _raridadeResultado = receitas[combinacao].Item2;
+
+            RegistrarMistura(_nomeResultado);
+
 
             if (_raridadeResultado != "Lendária")
             {
@@ -244,6 +271,13 @@ public class CauldronScript : MonoBehaviour
         }
 
         _filtroGradiente.color = corFinal;
+    }
+    #endregion
+
+    #region Codex
+    public void OnClickAbrirCodex()
+    {
+        codexScript.AbrirCodex();
     }
     #endregion
 }
