@@ -219,6 +219,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: button UI_4
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4994284f62944d7459122b62c168268a
+      internalID: -36274049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -234,6 +255,7 @@ TextureImporter:
       button UI_1: -740043371
       button UI_2: 994055918
       button UI_3: 1938373524
+      button UI_4: -36274049
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -144,6 +144,10 @@ public class CauldronScript : MonoBehaviour
         }
     }
 
+    public void StartMix() {
+        StartCoroutine(ProcessarMistura());
+    }
+
     private IEnumerator ProcessarMistura()
     {
         estaMisturando = true;
