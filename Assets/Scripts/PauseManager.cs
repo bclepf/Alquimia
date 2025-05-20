@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PauseManager : MonoBehaviour
 {
@@ -9,7 +10,13 @@ public class PauseManager : MonoBehaviour
     public static bool jogoPausado = false;
 
     public GameObject pausePanel;
-    public string cena; // Nome da cena do menu no build settings (ex: "MenuPrincipal")
+    public string cena;
+
+    [SerializeField] private GameObject _codexButton;
+    [SerializeField] private GameObject _mixButton;
+    [SerializeField] private GameObject _progressButton;
+    [SerializeField] private GameObject _pauseButton;
+    [SerializeField] private GameObject _flaskButton;
 
     void Start()
     {
@@ -34,6 +41,7 @@ public class PauseManager : MonoBehaviour
             jogoPausado = false;
             Time.timeScale = 1f;
             pausePanel.SetActive(false);
+            ChangeUiStatus();
         }
         else
         {
@@ -41,6 +49,27 @@ public class PauseManager : MonoBehaviour
             jogoPausado = true;
             Time.timeScale = 0f;
             pausePanel.SetActive(true);
+            ChangeUiStatus();
+        }
+    }
+
+    private void ChangeUiStatus()
+    {
+        if (_codexButton.activeInHierarchy == true && _mixButton.activeInHierarchy == true && _progressButton.activeInHierarchy == true && _pauseButton.activeInHierarchy == true && _flaskButton.activeInHierarchy == true)
+        {
+            _codexButton.SetActive(false);
+            _progressButton.SetActive(false);
+            _mixButton.SetActive(false);
+            _pauseButton.SetActive(false);
+            _flaskButton.SetActive(false);
+        }
+        else
+        {
+            _codexButton.SetActive(true);
+            _progressButton.SetActive(true);
+            _mixButton.SetActive(true);
+            _pauseButton.SetActive(true);
+            _flaskButton.SetActive(true);
         }
     }
 
