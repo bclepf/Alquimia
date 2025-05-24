@@ -6605,11 +6605,17 @@ MonoBehaviour:
   - {fileID: -585783339, guid: 9038f8b0531873a4788e2e78514b71ce, type: 3}
   - {fileID: -485497478, guid: 3d02ffc7006c5004a880e87e4bced0ed, type: 3}
   - {fileID: 21300000, guid: e8aec1f1961d9eb45815d07a80829f45, type: 3}
+  - {fileID: 21300000, guid: 2507ab243b6874644ac12cbdbfa9c7fc, type: 3}
+  - {fileID: 21300000, guid: 46dc1fef8acafac45b69f097700db401, type: 3}
+  - {fileID: 21300000, guid: 697f5f3a03c03354999ecd87b84f2e78, type: 3}
   nomesMisturas:
   - Golem
   - Zumbi Pequeno
   - "Drag\xE3o Filhote"
   - Pedra
+  - "\xC1rvore"
+  - Quimera
+  - Pedra Filosofal
   slotsMisturas:
   - imagemMistura: {fileID: 1189791830}
     nomeMistura: {fileID: 635445340}
@@ -8443,7 +8449,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1457098488}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1120628392}
+        m_TargetAssemblyTypeName: CodexScript, Assembly-CSharp
+        m_MethodName: ProximaPagina
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1457098488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10445,7 +10463,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1902249972}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1120628392}
+        m_TargetAssemblyTypeName: CodexScript, Assembly-CSharp
+        m_MethodName: PaginaAnterior
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1902249972
 MonoBehaviour:
   m_ObjectHideFlags: 0
