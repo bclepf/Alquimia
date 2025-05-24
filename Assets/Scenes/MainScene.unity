@@ -214,7 +214,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44a3561734554bb45b0f205252f767a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomePocao: "Osso de Drag\xE3o"
+  nomePocao: Dente de Tubarao
   raridade: 
 --- !u!50 &9821262
 Rigidbody2D:
@@ -387,7 +387,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44a3561734554bb45b0f205252f767a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomePocao: Sangue
+  nomePocao: Baba de Yeti
   raridade: 
 --- !u!50 &35286935
 Rigidbody2D:
@@ -993,7 +993,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44a3561734554bb45b0f205252f767a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomePocao: "\xC1gua"
+  nomePocao: Ar
   raridade: 
 --- !u!61 &182332967
 BoxCollider2D:
@@ -1459,7 +1459,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44a3561734554bb45b0f205252f767a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomePocao: Elixir Puro
+  nomePocao: Petroleo
   raridade: 
 --- !u!50 &237098182
 Rigidbody2D:
@@ -2779,7 +2779,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44a3561734554bb45b0f205252f767a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomePocao: 'Elixir '
+  nomePocao: Iogurte
   raridade: 
 --- !u!50 &485891744
 Rigidbody2D:
@@ -3555,7 +3555,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44a3561734554bb45b0f205252f767a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomePocao: Tritio
+  nomePocao: Fanta Uva
   raridade: 
 --- !u!50 &583779406
 Rigidbody2D:
@@ -3996,7 +3996,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44a3561734554bb45b0f205252f767a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomePocao: "Solu\xE7\xE3o de Ferro"
+  nomePocao: Oleo
   raridade: 
 --- !u!61 &644929170
 BoxCollider2D:
@@ -4833,7 +4833,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44a3561734554bb45b0f205252f767a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomePocao: Lava Fria
+  nomePocao: Sangue de Basilisco
   raridade: 
 --- !u!50 &737368286
 Rigidbody2D:
@@ -5822,7 +5822,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44a3561734554bb45b0f205252f767a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomePocao: Sulfur
+  nomePocao: Perola
   raridade: 
 --- !u!61 &905414873
 BoxCollider2D:
@@ -6900,7 +6900,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44a3561734554bb45b0f205252f767a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomePocao: "\xC1cido"
+  nomePocao: Agua do Mar
   raridade: 
 --- !u!50 &1135612530
 Rigidbody2D:
@@ -7297,7 +7297,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44a3561734554bb45b0f205252f767a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomePocao: "Vida L\xEDquida"
+  nomePocao: Agua do Tiete
   raridade: 
 --- !u!61 &1269350111
 BoxCollider2D:
@@ -7470,7 +7470,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44a3561734554bb45b0f205252f767a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomePocao: Energia
+  nomePocao: Meio a Meio
   raridade: 
 --- !u!61 &1269822642
 BoxCollider2D:
@@ -8620,7 +8620,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44a3561734554bb45b0f205252f767a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomePocao: Folha
+  nomePocao: Pena de Fenix
   raridade: 
 --- !u!212 &1478363347
 SpriteRenderer:
@@ -8721,7 +8721,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44a3561734554bb45b0f205252f767a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomePocao: Pedra Misteriosa
+  nomePocao: Runa
   raridade: 
 --- !u!61 &1482169783
 BoxCollider2D:
@@ -9288,7 +9288,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44a3561734554bb45b0f205252f767a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomePocao: "\xC1gua Suja"
+  nomePocao: Seiva
   raridade: 
 --- !u!50 &1603687526
 Rigidbody2D:
@@ -9563,6 +9563,10 @@ MonoBehaviour:
   _prefabZumbi: {fileID: 2372867474658486629, guid: cf05d3dabbbcd9d4fabab54f77053392, type: 3}
   _prefabDragao: {fileID: 1787906642267149596, guid: 47ac0625953310d47b15a8efd6c1c145, type: 3}
   _prefabPedra: {fileID: 3426436890848330337, guid: 964098f3a89e79148a84a1eebc14e53a, type: 3}
+  _prefabCabelo: {fileID: 0}
+  _prefabQuimera: {fileID: 1277267436772565931, guid: 593d89853233e6945b849cd4fb711198, type: 3}
+  _prefabFilosofal: {fileID: 3485973958867547661, guid: 8e17b3ba29a115c448188e9529e35d2b, type: 3}
+  _prefabArvore: {fileID: 2287709546471802026, guid: 6fbe8b896d41adb40820f17ced2a98e8, type: 3}
   _letreiroText: {fileID: 1285691746}
   codexScript: {fileID: 1120628392}
   _cesioPosition: {fileID: 3651585500107225506, guid: 4e9899096a512614eacbcd77c26b0529, type: 3}
@@ -10832,7 +10836,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44a3561734554bb45b0f205252f767a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomePocao: Comida Estragada
+  nomePocao: Gota de Sangue
   raridade: 
 --- !u!50 &1924446030
 Rigidbody2D:

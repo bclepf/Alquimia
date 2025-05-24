@@ -36,6 +36,10 @@ public class CauldronScript : MonoBehaviour
     [SerializeField] private GameObject _prefabZumbi;
     [SerializeField] private GameObject _prefabDragao;
     [SerializeField] private GameObject _prefabPedra;
+    [SerializeField] private GameObject _prefabCabelo;
+    [SerializeField] private GameObject _prefabQuimera;
+    [SerializeField] private GameObject _prefabFilosofal;
+    [SerializeField] private GameObject _prefabArvore;
     [Header("Lettering Elements")]
     [SerializeField] private Text _letreiroText;
     [Header("Codex")]
@@ -49,6 +53,10 @@ public class CauldronScript : MonoBehaviour
             { "Elixir Puro+Sangue+Vida Líquida",("Zumbi Pequeno", "Épica") },
             { "Lava Fria+Osso de Dragão+Pedra Misteriosa", ("Dragão Filhote","Épica") },
             { "Água+Lava Fria", ("Pedra","Rara") },
+            { "Elixir Puro+Pena de Fenix+Runa", ("Cabelo","Lendária") },
+            { "Baba de Yeti+Osso de Dragão+Sangue de Basilisco", ("Quimera","Épica") },
+            { "Pedra Misteriosa+Perola+Runa", ("Pedra Filosofal","Rara") },
+            { "Água+Ar+Folha", ("Árvore","Rara") },
 
         };
     #endregion
@@ -79,6 +87,10 @@ public class CauldronScript : MonoBehaviour
         mapaDePrefabs["Zumbi Pequeno"] = _prefabZumbi;
         mapaDePrefabs["Dragão Filhote"] = _prefabDragao;
         mapaDePrefabs["Pedra"] = _prefabPedra;
+        mapaDePrefabs["Cabelo"] = _prefabCabelo;
+        mapaDePrefabs["Árvore"] = _prefabArvore;
+        mapaDePrefabs["Quimera"] = _prefabQuimera;
+        mapaDePrefabs["Pedra Filosofal"] = _prefabFilosofal;
 
     }
 
