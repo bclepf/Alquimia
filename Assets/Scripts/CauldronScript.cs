@@ -11,6 +11,8 @@ public class CauldronScript : MonoBehaviour
     private const int limiteIngredientes = 3;
     private bool estaMisturando = false;
 
+    [SerializeField] PauseManager pauseManager;
+
     private string _raridadeResultado;
     private string _nomeResultado;
 
@@ -67,9 +69,13 @@ public class CauldronScript : MonoBehaviour
     [SerializeField] private AudioClip _cesioSound;
     [SerializeField] private Color _corInicialCesio;
     [SerializeField] private Color _corFinalCesio;
-
     #endregion
 
+    #region Cabelo
+    [Header("Cabelo")]
+    [SerializeField] private Transform _pedrinhoPosition;
+    [SerializeField] private GameObject _pedrinhoObj;
+    #endregion
     private void Start()
     {
         if (_restartLayer != null)
@@ -156,7 +162,8 @@ public class CauldronScript : MonoBehaviour
         }
     }
 
-    public void StartMix() {
+    public void StartMix()
+    {
         StartCoroutine(ProcessarMistura());
     }
 
@@ -217,7 +224,6 @@ public class CauldronScript : MonoBehaviour
         {
             Debug.LogWarning("Prefab não encontrado para: " + _nomeResultado);
         }
-
         StartCoroutine(ResetGame());
     }
 
@@ -238,8 +244,16 @@ public class CauldronScript : MonoBehaviour
                 {
                     Instantiate(prefabCesio, _cesioPosition.position, Quaternion.identity);
                 }
-
                 Debug.Log("EasterEgg Césio");
+                break;
+
+            case "Cabelo":
+                _pedrinhoObj.SetActive(false);
+                if (mapaDePrefabs.TryGetValue("Cabelo", out GameObject prefabCabelo))
+                {
+                    Instantiate(prefabCabelo, _pedrinhoPosition.position, Quaternion.identity);
+                }
+                Debug.Log("EasterEgg Cabelo");
                 break;
 
             default:
@@ -265,11 +279,10 @@ public class CauldronScript : MonoBehaviour
     private IEnumerator ResetGame()
     {
         yield return new WaitForSeconds(3f);
-
-
         ingredientesNoCaldeirao.Clear();
         _restartLayer.SetActive(true);
         _flasks.SetActive(false);
+        pauseManager.ChangeUiStatus();
     }
 
     private IEnumerator TrocarCorFundo(Color corInicial, Color corFinal)

@@ -53,7 +53,7 @@ public class PauseManager : MonoBehaviour
         }
     }
 
-    private void ChangeUiStatus()
+    public void ChangeUiStatus()
     {
         if (_codexButton.activeInHierarchy == true && _mixButton.activeInHierarchy == true && _progressButton.activeInHierarchy == true && _pauseButton.activeInHierarchy == true && _flaskButton.activeInHierarchy == true)
         {
