@@ -34,6 +34,7 @@ public class FlaskScript : MonoBehaviour
 
     void OnMouseDown()
     {
+        if (PauseManager.jogoPausado) return;
         _isDragging = true;
         if (_rb != null)
         {
@@ -45,6 +46,7 @@ public class FlaskScript : MonoBehaviour
 
     void Update()
     {
+        if (PauseManager.jogoPausado) return;
         if (_isDragging)
         {
             Vector3 newPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition) + _offset;
