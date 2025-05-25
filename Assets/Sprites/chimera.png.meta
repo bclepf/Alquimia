@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3bd388967a4292e458ad7ac73a5e198f
+guid: 46dc1fef8acafac45b69f097700db401
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -134,91 +134,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Browser Games - The Gummibar Game - Volume_0
-      rect:
-        serializedVersion: 2
-        x: 47
-        y: 7
-        width: 17
-        height: 23
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a45dbf8b74ad61147a3a0178971b3ecd
-      internalID: 1628333527
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Browser Games - The Gummibar Game - Volume_1
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 7
-        width: 30
-        height: 23
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aa16e120397116148961f19bc14587a9
-      internalID: -73743171
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Browser Games - The Gummibar Game - Volume_2
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 7
-        width: 21
-        height: 23
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a7eaa503613f366488b3d2029508f359
-      internalID: 1365134069
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Browser Games - The Gummibar Game - Volume_3
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 7
-        width: 17
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a43168e2fc3fbf24abd21db5b7ee2c36
-      internalID: 1271454860
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -229,11 +145,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Browser Games - The Gummibar Game - Volume_0: 1628333527
-      Browser Games - The Gummibar Game - Volume_1: -73743171
-      Browser Games - The Gummibar Game - Volume_2: 1365134069
-      Browser Games - The Gummibar Game - Volume_3: 1271454860
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

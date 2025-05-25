@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3bd388967a4292e458ad7ac73a5e198f
+guid: 749f260cbe9c09841b366968341ce3a2
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -69,7 +69,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 4096
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -136,76 +136,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Browser Games - The Gummibar Game - Volume_0
+      name: Pedrinho_Cabelo_0
       rect:
         serializedVersion: 2
-        x: 47
-        y: 7
-        width: 17
-        height: 23
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a45dbf8b74ad61147a3a0178971b3ecd
-      internalID: 1628333527
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Browser Games - The Gummibar Game - Volume_1
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 7
-        width: 30
-        height: 23
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aa16e120397116148961f19bc14587a9
-      internalID: -73743171
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Browser Games - The Gummibar Game - Volume_2
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 7
-        width: 21
-        height: 23
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a7eaa503613f366488b3d2029508f359
-      internalID: 1365134069
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Browser Games - The Gummibar Game - Volume_3
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 7
-        width: 17
-        height: 23
+        x: 18
+        y: 26
+        width: 88
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,8 +150,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a43168e2fc3fbf24abd21db5b7ee2c36
-      internalID: 1271454860
+      spriteID: 20065d8715849d24086d9eee76def3ac
+      internalID: -1648533660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pedrinho_Cabelo_1
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 26
+        width: 88
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca0787842bcbbe04cb78101122ecca98
+      internalID: -684429920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pedrinho_Cabelo_2
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 26
+        width: 88
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43dd45534b7390b4a9421bdf17b27c2d
+      internalID: -1809780813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pedrinho_Cabelo_3
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 26
+        width: 88
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 081e4f9b873b54045917b77a9f09eeb9
+      internalID: -1811594800
       vertices: []
       indices: 
       edges: []
@@ -230,10 +230,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Browser Games - The Gummibar Game - Volume_0: 1628333527
-      Browser Games - The Gummibar Game - Volume_1: -73743171
-      Browser Games - The Gummibar Game - Volume_2: 1365134069
-      Browser Games - The Gummibar Game - Volume_3: 1271454860
+      Pedrinho_Cabelo_0: -1648533660
+      Pedrinho_Cabelo_1: -684429920
+      Pedrinho_Cabelo_2: -1809780813
+      Pedrinho_Cabelo_3: -1811594800
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

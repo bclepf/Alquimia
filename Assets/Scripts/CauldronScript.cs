@@ -11,6 +11,8 @@ public class CauldronScript : MonoBehaviour
     private const int limiteIngredientes = 3;
     private bool estaMisturando = false;
 
+    [SerializeField] PauseManager pauseManager;
+
     private string _raridadeResultado;
     private string _nomeResultado;
 
@@ -36,6 +38,10 @@ public class CauldronScript : MonoBehaviour
     [SerializeField] private GameObject _prefabZumbi;
     [SerializeField] private GameObject _prefabDragao;
     [SerializeField] private GameObject _prefabPedra;
+    [SerializeField] private GameObject _prefabCabelo;
+    [SerializeField] private GameObject _prefabQuimera;
+    [SerializeField] private GameObject _prefabFilosofal;
+    [SerializeField] private GameObject _prefabArvore;
     [Header("Lettering Elements")]
     [SerializeField] private Text _letreiroText;
     [Header("Codex")]
@@ -49,6 +55,10 @@ public class CauldronScript : MonoBehaviour
             { "Elixir Puro+Sangue+Vida Líquida",("Zumbi Pequeno", "Épica") },
             { "Lava Fria+Osso de Dragão+Pedra Misteriosa", ("Dragão Filhote","Épica") },
             { "Água+Lava Fria", ("Pedra","Rara") },
+            { "Elixir Puro+Pena de Fenix+Runa", ("Cabelo","Lendária") },
+            { "Baba de Yeti+Osso de Dragão+Sangue de Basilisco", ("Quimera","Épica") },
+            { "Pedra Misteriosa+Perola+Runa", ("Pedra Filosofal","Rara") },
+            { "Água+Ar+Folha", ("Árvore","Rara") },
 
         };
     #endregion
@@ -59,9 +69,13 @@ public class CauldronScript : MonoBehaviour
     [SerializeField] private AudioClip _cesioSound;
     [SerializeField] private Color _corInicialCesio;
     [SerializeField] private Color _corFinalCesio;
-
     #endregion
 
+    #region Cabelo
+    [Header("Cabelo")]
+    [SerializeField] private Transform _pedrinhoPosition;
+    [SerializeField] private GameObject _pedrinhoObj;
+    #endregion
     private void Start()
     {
         if (_restartLayer != null)
@@ -79,6 +93,10 @@ public class CauldronScript : MonoBehaviour
         mapaDePrefabs["Zumbi Pequeno"] = _prefabZumbi;
         mapaDePrefabs["Dragão Filhote"] = _prefabDragao;
         mapaDePrefabs["Pedra"] = _prefabPedra;
+        mapaDePrefabs["Cabelo"] = _prefabCabelo;
+        mapaDePrefabs["Árvore"] = _prefabArvore;
+        mapaDePrefabs["Quimera"] = _prefabQuimera;
+        mapaDePrefabs["Pedra Filosofal"] = _prefabFilosofal;
 
     }
 
@@ -144,7 +162,8 @@ public class CauldronScript : MonoBehaviour
         }
     }
 
-    public void StartMix() {
+    public void StartMix()
+    {
         StartCoroutine(ProcessarMistura());
     }
 
@@ -205,7 +224,6 @@ public class CauldronScript : MonoBehaviour
         {
             Debug.LogWarning("Prefab não encontrado para: " + _nomeResultado);
         }
-
         StartCoroutine(ResetGame());
     }
 
@@ -226,8 +244,16 @@ public class CauldronScript : MonoBehaviour
                 {
                     Instantiate(prefabCesio, _cesioPosition.position, Quaternion.identity);
                 }
-
                 Debug.Log("EasterEgg Césio");
+                break;
+
+            case "Cabelo":
+                _pedrinhoObj.SetActive(false);
+                if (mapaDePrefabs.TryGetValue("Cabelo", out GameObject prefabCabelo))
+                {
+                    Instantiate(prefabCabelo, _pedrinhoPosition.position, Quaternion.identity);
+                }
+                Debug.Log("EasterEgg Cabelo");
                 break;
 
             default:
@@ -253,11 +279,10 @@ public class CauldronScript : MonoBehaviour
     private IEnumerator ResetGame()
     {
         yield return new WaitForSeconds(3f);
-
-
         ingredientesNoCaldeirao.Clear();
         _restartLayer.SetActive(true);
         _flasks.SetActive(false);
+        pauseManager.ChangeUiStatus();
     }
 
     private IEnumerator TrocarCorFundo(Color corInicial, Color corFinal)

@@ -214,7 +214,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44a3561734554bb45b0f205252f767a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomePocao: "Osso de Drag\xE3o"
+  nomePocao: Dente de Tubarao
   raridade: 
 --- !u!50 &9821262
 Rigidbody2D:
@@ -387,7 +387,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44a3561734554bb45b0f205252f767a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomePocao: Sangue
+  nomePocao: Baba de Yeti
   raridade: 
 --- !u!50 &35286935
 Rigidbody2D:
@@ -669,7 +669,7 @@ RectTransform:
   m_GameObject: {fileID: 52371513}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 4, y: 4, z: 4}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1380567705}
@@ -677,7 +677,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00075245, y: -62.273}
+  m_AnchoredPosition: {x: 0, y: -197}
   m_SizeDelta: {x: 140.84, y: 33.946}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &52371515
@@ -862,7 +862,6 @@ GameObject:
   - component: {fileID: 182332968}
   - component: {fileID: 182332967}
   - component: {fileID: 182332966}
-  - component: {fileID: 182332965}
   m_Layer: 6
   m_Name: Ar
   m_TagString: Untagged
@@ -885,102 +884,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1919153206}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &182332965
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 182332963}
-  m_Enabled: 0
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!114 &182332966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -993,7 +896,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44a3561734554bb45b0f205252f767a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomePocao: "\xC1gua"
+  nomePocao: Ar
   raridade: 
 --- !u!61 &182332967
 BoxCollider2D:
@@ -1459,7 +1362,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44a3561734554bb45b0f205252f767a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomePocao: Elixir Puro
+  nomePocao: Petroleo
   raridade: 
 --- !u!50 &237098182
 Rigidbody2D:
@@ -2779,7 +2682,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44a3561734554bb45b0f205252f767a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomePocao: 'Elixir '
+  nomePocao: Iogurte
   raridade: 
 --- !u!50 &485891744
 Rigidbody2D:
@@ -3555,7 +3458,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44a3561734554bb45b0f205252f767a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomePocao: Tritio
+  nomePocao: Fanta Uva
   raridade: 
 --- !u!50 &583779406
 Rigidbody2D:
@@ -3647,6 +3550,7 @@ GameObject:
   - component: {fileID: 586685332}
   - component: {fileID: 586685334}
   - component: {fileID: 586685333}
+  - component: {fileID: 586685335}
   m_Layer: 5
   m_Name: PausePanel
   m_TagString: Untagged
@@ -3666,7 +3570,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 784213677}
+  - {fileID: 1078910884}
   - {fileID: 52371514}
   m_Father: {fileID: 2111713934}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3713,6 +3617,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 586685331}
   m_CullTransparentMesh: 1
+--- !u!225 &586685335
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 586685331}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &603433126
 GameObject:
   m_ObjectHideFlags: 0
@@ -3996,7 +3912,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44a3561734554bb45b0f205252f767a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomePocao: "Solu\xE7\xE3o de Ferro"
+  nomePocao: Oleo
   raridade: 
 --- !u!61 &644929170
 BoxCollider2D:
@@ -4390,7 +4306,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_LocalScale: {x: 6, y: 6, z: 6}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1234647425}
@@ -4441,7 +4357,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 5.004257, y: 5}
+  m_Size: {x: 6, y: 6}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -4496,10 +4412,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -4516,10 +4432,10 @@ Canvas:
   m_GameObject: {fileID: 673178296}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
-  m_PixelPerfect: 0
+  m_PixelPerfect: 1
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
@@ -4609,6 +4525,85 @@ RectTransform:
   m_AnchoredPosition: {x: 75.200195, y: 101.799805}
   m_SizeDelta: {x: 15000, y: 15000}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &692344871
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 692344872}
+  - component: {fileID: 692344874}
+  - component: {fileID: 692344873}
+  m_Layer: 5
+  m_Name: Escrito Menu
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &692344872
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692344871}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.11, y: 0.11, z: 0.11}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 1078910884}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -0.73000336, y: 1.1999998}
+  m_SizeDelta: {x: -10.69, y: 60.47}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &692344873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692344871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.9254902, g: 0.76862746, b: 0.60784316, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 3a22c2ca316406e49922cfcdd33aa38e, type: 3}
+    m_FontSize: 150
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 150
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: Voltar
+--- !u!222 &692344874
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692344871}
+  m_CullTransparentMesh: 1
 --- !u!1 &715482747
 GameObject:
   m_ObjectHideFlags: 0
@@ -4833,7 +4828,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44a3561734554bb45b0f205252f767a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomePocao: Lava Fria
+  nomePocao: Sangue de Basilisco
   raridade: 
 --- !u!50 &737368286
 Rigidbody2D:
@@ -5087,85 +5082,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nomePocao: "Osso de Drag\xE3o"
   raridade: 
---- !u!1 &784213676
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 784213677}
-  - component: {fileID: 784213679}
-  - component: {fileID: 784213678}
-  m_Layer: 5
-  m_Name: PauseText
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &784213677
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 784213676}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 586685332}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0018811, y: 19.728}
-  m_SizeDelta: {x: 140.84, y: 90.93}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &784213678
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 784213676}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 150
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 1
-    m_LineSpacing: 1
-  m_Text: PAUSE
---- !u!222 &784213679
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 784213676}
-  m_CullTransparentMesh: 1
 --- !u!1 &838179498
 GameObject:
   m_ObjectHideFlags: 0
@@ -5822,7 +5738,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44a3561734554bb45b0f205252f767a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomePocao: Sulfur
+  nomePocao: Perola
   raridade: 
 --- !u!61 &905414873
 BoxCollider2D:
@@ -6536,6 +6452,139 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1078910883
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1078910884}
+  - component: {fileID: 1078910887}
+  - component: {fileID: 1078910886}
+  - component: {fileID: 1078910885}
+  m_Layer: 5
+  m_Name: Resume Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1078910884
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1078910883}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_ConstrainProportionsScale: 1
+  m_Children:
+  - {fileID: 692344872}
+  m_Father: {fileID: 586685332}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 171}
+  m_SizeDelta: {x: 140.84, y: 33.946}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1078910885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1078910883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.3529412, g: 0.09411765, b: 0.40784314, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.3
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1078910886}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1056512095}
+        m_TargetAssemblyTypeName: PauseManager, Assembly-CSharp
+        m_MethodName: PauseScreen
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1078910886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1078910883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.6117647, g: 0.39607844, b: 0.84705883, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: dbe2b75c8986bf34184f099928ddf0f2, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1078910887
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1078910883}
+  m_CullTransparentMesh: 1
 --- !u!1 &1120628390
 GameObject:
   m_ObjectHideFlags: 0
@@ -6605,11 +6654,17 @@ MonoBehaviour:
   - {fileID: -585783339, guid: 9038f8b0531873a4788e2e78514b71ce, type: 3}
   - {fileID: -485497478, guid: 3d02ffc7006c5004a880e87e4bced0ed, type: 3}
   - {fileID: 21300000, guid: e8aec1f1961d9eb45815d07a80829f45, type: 3}
+  - {fileID: 21300000, guid: 2507ab243b6874644ac12cbdbfa9c7fc, type: 3}
+  - {fileID: 21300000, guid: 46dc1fef8acafac45b69f097700db401, type: 3}
+  - {fileID: 21300000, guid: 697f5f3a03c03354999ecd87b84f2e78, type: 3}
   nomesMisturas:
   - Golem
   - Zumbi Pequeno
   - "Drag\xE3o Filhote"
   - Pedra
+  - "\xC1rvore"
+  - Quimera
+  - Pedra Filosofal
   slotsMisturas:
   - imagemMistura: {fileID: 1189791830}
     nomeMistura: {fileID: 635445340}
@@ -6900,7 +6955,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44a3561734554bb45b0f205252f767a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomePocao: "\xC1cido"
+  nomePocao: Agua do Mar
   raridade: 
 --- !u!50 &1135612530
 Rigidbody2D:
@@ -7297,7 +7352,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44a3561734554bb45b0f205252f767a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomePocao: "Vida L\xEDquida"
+  nomePocao: Agua do Tiete
   raridade: 
 --- !u!61 &1269350111
 BoxCollider2D:
@@ -7470,7 +7525,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44a3561734554bb45b0f205252f767a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomePocao: Energia
+  nomePocao: Meio a Meio
   raridade: 
 --- !u!61 &1269822642
 BoxCollider2D:
@@ -8011,9 +8066,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 673178300}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 224, y: -487}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 224, y: 53}
   m_SizeDelta: {x: 30, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1334633888
@@ -8443,7 +8498,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1457098488}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1120628392}
+        m_TargetAssemblyTypeName: CodexScript, Assembly-CSharp
+        m_MethodName: ProximaPagina
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1457098488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8620,7 +8687,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44a3561734554bb45b0f205252f767a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomePocao: Folha
+  nomePocao: Pena de Fenix
   raridade: 
 --- !u!212 &1478363347
 SpriteRenderer:
@@ -8721,7 +8788,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44a3561734554bb45b0f205252f767a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomePocao: Pedra Misteriosa
+  nomePocao: Runa
   raridade: 
 --- !u!61 &1482169783
 BoxCollider2D:
@@ -8939,7 +9006,6 @@ GameObject:
   - component: {fileID: 1562700984}
   - component: {fileID: 1562700985}
   - component: {fileID: 1562700986}
-  - component: {fileID: 1562700987}
   m_Layer: 6
   m_Name: "\xC1gua"
   m_TagString: Untagged
@@ -9100,102 +9166,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nomePocao: "\xC1gua"
   raridade: 
---- !u!82 &1562700987
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1562700979}
-  m_Enabled: 0
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &1603687522
 GameObject:
   m_ObjectHideFlags: 0
@@ -9288,7 +9258,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44a3561734554bb45b0f205252f767a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomePocao: "\xC1gua Suja"
+  nomePocao: Seiva
   raridade: 
 --- !u!50 &1603687526
 Rigidbody2D:
@@ -9549,6 +9519,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3c4aa7c96bcccc44bf0df4e7eb73f3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pauseManager: {fileID: 1056512095}
   _restartLayer: {fileID: 324854261}
   _flasks: {fileID: 931121857}
   _filtroGradiente: {fileID: 376133698}
@@ -9563,12 +9534,18 @@ MonoBehaviour:
   _prefabZumbi: {fileID: 2372867474658486629, guid: cf05d3dabbbcd9d4fabab54f77053392, type: 3}
   _prefabDragao: {fileID: 1787906642267149596, guid: 47ac0625953310d47b15a8efd6c1c145, type: 3}
   _prefabPedra: {fileID: 3426436890848330337, guid: 964098f3a89e79148a84a1eebc14e53a, type: 3}
+  _prefabCabelo: {fileID: 280233530027291321, guid: 8a70e1cb2efd38942b8c10fc9f4bc1fd, type: 3}
+  _prefabQuimera: {fileID: 1277267436772565931, guid: 593d89853233e6945b849cd4fb711198, type: 3}
+  _prefabFilosofal: {fileID: 3485973958867547661, guid: 8e17b3ba29a115c448188e9529e35d2b, type: 3}
+  _prefabArvore: {fileID: 2287709546471802026, guid: 6fbe8b896d41adb40820f17ced2a98e8, type: 3}
   _letreiroText: {fileID: 1285691746}
   codexScript: {fileID: 1120628392}
   _cesioPosition: {fileID: 3651585500107225506, guid: 4e9899096a512614eacbcd77c26b0529, type: 3}
   _cesioSound: {fileID: 8300000, guid: 53f131f84aa4a5341aa1f8197df16860, type: 3}
   _corInicialCesio: {r: 0.5568628, g: 0.7607844, b: 0.7843138, a: 0}
   _corFinalCesio: {r: 0.5577163, g: 0.7610293, b: 0.7830189, a: 0.3137255}
+  _pedrinhoPosition: {fileID: 1317383966}
+  _pedrinhoObj: {fileID: 1317383964}
 --- !u!1 &1704505814
 GameObject:
   m_ObjectHideFlags: 0
@@ -10441,7 +10418,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1902249972}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1120628392}
+        m_TargetAssemblyTypeName: CodexScript, Assembly-CSharp
+        m_MethodName: PaginaAnterior
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1902249972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10832,7 +10821,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44a3561734554bb45b0f205252f767a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomePocao: Comida Estragada
+  nomePocao: Gota de Sangue
   raridade: 
 --- !u!50 &1924446030
 Rigidbody2D:
@@ -11345,7 +11334,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
+  m_BlockingObjects: 3
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
