@@ -42,6 +42,9 @@ public class CauldronScript : MonoBehaviour
     [SerializeField] private GameObject _prefabQuimera;
     [SerializeField] private GameObject _prefabFilosofal;
     [SerializeField] private GameObject _prefabArvore;
+    [SerializeField] private GameObject _prefabHollow;
+    [SerializeField] private GameObject _prefabDeus;
+    [SerializeField] private GameObject _prefabCapivara;
     [Header("Lettering Elements")]
     [SerializeField] private Text _letreiroText;
     [Header("Codex")]
@@ -59,6 +62,9 @@ public class CauldronScript : MonoBehaviour
             { "Baba de Yeti+Osso de Dragão+Sangue de Basilisco", ("Quimera","Épica") },
             { "Pedra Misteriosa+Perola+Runa", ("Pedra Filosofal","Rara") },
             { "Água+Ar+Folha", ("Árvore","Rara") },
+            { "Elixir+Folha+Lava Fria", ("Hollow","Épica") },
+            { "Energia+Fanta Uva+Sangue", ("Deus do Medo","Épica") },
+            { "Água+Ar+Vida Líquida", ("Capivara","Rara") },
 
         };
     #endregion
@@ -97,6 +103,9 @@ public class CauldronScript : MonoBehaviour
         mapaDePrefabs["Árvore"] = _prefabArvore;
         mapaDePrefabs["Quimera"] = _prefabQuimera;
         mapaDePrefabs["Pedra Filosofal"] = _prefabFilosofal;
+        mapaDePrefabs["Hollow"] = _prefabHollow;
+        mapaDePrefabs["Deus do Medo"] = _prefabDeus;
+        mapaDePrefabs["Capivara"] = _prefabCapivara;
 
     }
 

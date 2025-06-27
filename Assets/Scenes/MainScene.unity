@@ -2604,7 +2604,7 @@ GameObject:
   - component: {fileID: 485891743}
   - component: {fileID: 485891742}
   m_Layer: 6
-  m_Name: Iogurte
+  m_Name: Extrato de Sakura
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2682,7 +2682,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44a3561734554bb45b0f205252f767a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomePocao: Iogurte
+  nomePocao: Extrato de Sakura
   raridade: 
 --- !u!50 &485891744
 Rigidbody2D:
@@ -3380,7 +3380,7 @@ GameObject:
   - component: {fileID: 583779405}
   - component: {fileID: 583779404}
   m_Layer: 6
-  m_Name: Fanta Uva
+  m_Name: Sangue de Basilisco
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3458,7 +3458,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44a3561734554bb45b0f205252f767a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomePocao: Fanta Uva
+  nomePocao: Sangue de Basilisco
   raridade: 
 --- !u!50 &583779406
 Rigidbody2D:
@@ -4750,7 +4750,7 @@ GameObject:
   - component: {fileID: 737368285}
   - component: {fileID: 737368284}
   m_Layer: 6
-  m_Name: Sangue de Basilisco
+  m_Name: Fanta Uva
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4828,7 +4828,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44a3561734554bb45b0f205252f767a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomePocao: Sangue de Basilisco
+  nomePocao: Fanta Uva
   raridade: 
 --- !u!50 &737368286
 Rigidbody2D:
@@ -5963,7 +5963,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44a3561734554bb45b0f205252f767a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomePocao: 'Elixir '
+  nomePocao: Elixir
   raridade: 
 --- !u!50 &905797619
 Rigidbody2D:
@@ -6657,6 +6657,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2507ab243b6874644ac12cbdbfa9c7fc, type: 3}
   - {fileID: 21300000, guid: 46dc1fef8acafac45b69f097700db401, type: 3}
   - {fileID: 21300000, guid: 697f5f3a03c03354999ecd87b84f2e78, type: 3}
+  - {fileID: -459925875, guid: 6a14d2600a7a59448a45ae27ba8e09c7, type: 3}
+  - {fileID: 852206478, guid: 94c18b0863bdd7348ba88bd23873b0ce, type: 3}
+  - {fileID: -627865600, guid: 09c90378ffc236248b86118d7103e793, type: 3}
   nomesMisturas:
   - Golem
   - Zumbi Pequeno
@@ -6665,6 +6668,9 @@ MonoBehaviour:
   - "\xC1rvore"
   - Quimera
   - Pedra Filosofal
+  - Hollow
+  - Deus do Medo
+  - Capivara
   slotsMisturas:
   - imagemMistura: {fileID: 1189791830}
     nomeMistura: {fileID: 635445340}
@@ -6841,7 +6847,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1124418575}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Mixes Position
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7319,7 +7325,7 @@ GameObject:
   - component: {fileID: 1269350111}
   - component: {fileID: 1269350110}
   m_Layer: 6
-  m_Name: Agua do Tiete
+  m_Name: Baba de Dragao
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7352,7 +7358,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44a3561734554bb45b0f205252f767a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomePocao: Agua do Tiete
+  nomePocao: "Baba de Drag\xE3o"
   raridade: 
 --- !u!61 &1269350111
 BoxCollider2D:
@@ -9180,7 +9186,7 @@ GameObject:
   - component: {fileID: 1603687525}
   - component: {fileID: 1603687524}
   m_Layer: 6
-  m_Name: 'Seiva '
+  m_Name: "\xC1gua do Tiete"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9258,7 +9264,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44a3561734554bb45b0f205252f767a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomePocao: Seiva
+  nomePocao: "\xC1gua do Tiete"
   raridade: 
 --- !u!50 &1603687526
 Rigidbody2D:
@@ -9538,6 +9544,9 @@ MonoBehaviour:
   _prefabQuimera: {fileID: 1277267436772565931, guid: 593d89853233e6945b849cd4fb711198, type: 3}
   _prefabFilosofal: {fileID: 3485973958867547661, guid: 8e17b3ba29a115c448188e9529e35d2b, type: 3}
   _prefabArvore: {fileID: 2287709546471802026, guid: 6fbe8b896d41adb40820f17ced2a98e8, type: 3}
+  _prefabHollow: {fileID: 4889706174444173178, guid: f729576f5af45644f91c0d8d1116cb1c, type: 3}
+  _prefabDeus: {fileID: 7396446386608769951, guid: 7a93f36b04608224496d7e2d5120a063, type: 3}
+  _prefabCapivara: {fileID: 4419640110650057447, guid: 6def0778c38e0a74eafa358bc551cf11, type: 3}
   _letreiroText: {fileID: 1285691746}
   codexScript: {fileID: 1120628392}
   _cesioPosition: {fileID: 3651585500107225506, guid: 4e9899096a512614eacbcd77c26b0529, type: 3}
