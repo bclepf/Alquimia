@@ -42,6 +42,15 @@ public class CauldronScript : MonoBehaviour
     [SerializeField] private GameObject _prefabQuimera;
     [SerializeField] private GameObject _prefabFilosofal;
     [SerializeField] private GameObject _prefabArvore;
+    [SerializeField] private GameObject _prefabHollow;
+    [SerializeField] private GameObject _prefabDeus;
+    [SerializeField] private GameObject _prefabCapivara;
+    [SerializeField] private GameObject _prefabEstrela;
+    [SerializeField] private GameObject _prefabDinheiro;
+    [SerializeField] private GameObject _prefabEspada;
+    [SerializeField] private GameObject _prefabCoroa;
+    [SerializeField] private GameObject _prefabCalice;
+    [SerializeField] private GameObject _prefabMedalhao;
     [Header("Lettering Elements")]
     [SerializeField] private Text _letreiroText;
     [Header("Codex")]
@@ -59,7 +68,15 @@ public class CauldronScript : MonoBehaviour
             { "Baba de Yeti+Osso de Dragão+Sangue de Basilisco", ("Quimera","Épica") },
             { "Pedra Misteriosa+Perola+Runa", ("Pedra Filosofal","Rara") },
             { "Água+Ar+Folha", ("Árvore","Rara") },
-
+            { "Elixir+Folha+Lava Fria", ("Hollow","Épica") },
+            { "Energia+Fanta Uva+Sangue", ("Deus do Medo","Épica") },
+            { "Água+Ar+Vida Líquida", ("Capivara","Rara") },
+            { "Energia+Tritio+Tubo de Raios", ("Estrela","Épica") },
+            { "Petroleo", ("Dinheiro","Épica") },
+            { "Extrato de Sakura+Sangue de Basilisco+Solução de Ferro", ("Espada","Épica") },
+            { "Ar+Baba de Yeti+Tubo de Raios", ("Coroa","Épica") },
+            { "Energia+Lava Fria+Solução de Ferro", ("Cálice","Épica") },
+            { "Elixir Puro+Gota de Sangue+Pedra Misteriosa", ("Medalhão","Épica") },
         };
     #endregion
 
@@ -97,7 +114,15 @@ public class CauldronScript : MonoBehaviour
         mapaDePrefabs["Árvore"] = _prefabArvore;
         mapaDePrefabs["Quimera"] = _prefabQuimera;
         mapaDePrefabs["Pedra Filosofal"] = _prefabFilosofal;
-
+        mapaDePrefabs["Hollow"] = _prefabHollow;
+        mapaDePrefabs["Deus do Medo"] = _prefabDeus;
+        mapaDePrefabs["Capivara"] = _prefabCapivara;
+        mapaDePrefabs["Estrela"] = _prefabEstrela;
+        mapaDePrefabs["Dinheiro"] = _prefabDinheiro;
+        mapaDePrefabs["Espada"] = _prefabEspada;
+        mapaDePrefabs["Coroa"] = _prefabCoroa;
+        mapaDePrefabs["Cálice"] = _prefabCalice;
+        mapaDePrefabs["Medalhão"] = _prefabMedalhao;
     }
 
     private void Update()

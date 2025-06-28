@@ -14,7 +14,6 @@ public class PauseManager : MonoBehaviour
 
     [SerializeField] private GameObject _codexButton;
     [SerializeField] private GameObject _mixButton;
-    [SerializeField] private GameObject _progressButton;
     [SerializeField] private GameObject _pauseButton;
     [SerializeField] private GameObject _flaskButton;
 
@@ -55,10 +54,9 @@ public class PauseManager : MonoBehaviour
 
     public void ChangeUiStatus()
     {
-        if (_codexButton.activeInHierarchy == true && _mixButton.activeInHierarchy == true && _progressButton.activeInHierarchy == true && _pauseButton.activeInHierarchy == true && _flaskButton.activeInHierarchy == true)
+        if (_codexButton.activeInHierarchy == true && _mixButton.activeInHierarchy == true && _pauseButton.activeInHierarchy == true && _flaskButton.activeInHierarchy == true)
         {
             _codexButton.SetActive(false);
-            _progressButton.SetActive(false);
             _mixButton.SetActive(false);
             _pauseButton.SetActive(false);
             _flaskButton.SetActive(false);
@@ -66,7 +64,6 @@ public class PauseManager : MonoBehaviour
         else
         {
             _codexButton.SetActive(true);
-            _progressButton.SetActive(true);
             _mixButton.SetActive(true);
             _pauseButton.SetActive(true);
             _flaskButton.SetActive(true);
